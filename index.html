@@ -36,7 +36,7 @@
     <!-- Header Section -->
     <header class=" container mx-auto">
       <nav
-        class=" hidden flex justify-between px-12 items-center h-28 mx-20 mt-10 bg-[#F85559] rounded-full"
+        class=" hidden lg:flex md:flex justify-between px-12 items-center h-28 mx-20 mt-10 bg-[#F85559] rounded-full"
       >
         <div>
           <ul class="flex gap-5 text-white">
@@ -58,6 +58,44 @@
           </button>
         </div>
       </nav>
+
+      <!-- Navigation for smaller screen -->
+      
+      <nav class="lg:hidden md:hidden flex gap-28 ">
+
+        <!-- forlogo -->
+
+        <div>
+          <div class="flex items-center gap-2">
+            <img src="./images/logo.png" alt="logo" />
+            <h2 class="text-2xl text-black font-bold">Fruit Burst</h2>
+          </div>
+        </div>
+
+        <!-- Logo box ends here -->
+
+        <!-- dropdown box start -->
+        <div>
+
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Shop All</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- dropdownbox ends -->
+
+      </nav>
+    
       <!-- Banner section -->
       <section class="container mx-auto mt-14 mb-5 lg:mb-64">
         <div class="relative flex items-center justify-center">
